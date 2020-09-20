@@ -7,12 +7,12 @@
           "type": "$network.request",
           "options": {
             "url": "https://newsapi.org/v2/everything?q=climate%20AND%20(denver%20OR%20orlando%20OR%20Austin%20OR%20%22San%20Antonio%22%20OR%20Seattle)&from=2020-09-01&to=2020-09-19&sortBy=relevance&apiKey=9211ca16a6414c7eb224517aced91b46",
-            "data_type": "html"
+//            "data_type": "html"
           },
           "success": {
             "type": "$render",
             "options": {
-              "type": "html"
+         //     "type": "html"
             }
           }
         }
@@ -24,7 +24,7 @@
           },
           "header": {
             "style": {
-              "background": "#246BCE",
+              "background": "#b63c87",
               "shy": "true",
               "color": "#296BCE"
             },
