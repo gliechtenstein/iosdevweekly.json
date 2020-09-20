@@ -1,12 +1,12 @@
 {
   "$jason": {
     "head": {
-      "title": "iOS Dev Weekly Master",
+      "title": "Newslang002",
       "actions": {
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "http://iosdevweekly.com/issues",
+            "url": "https://newsapi.org/v2/everything?q=climate%20AND%20(denver%20OR%20orlando%20OR%20Austin%20OR%20%22San%20Antonio%22%20OR%20Seattle)&from=2020-09-01&to=2020-09-19&sortBy=relevance&apiKey=9211ca16a6414c7eb224517aced91b46",
             "data_type": "html"
           },
           "success": {
@@ -24,11 +24,11 @@
           },
           "header": {
             "style": {
-              "background": "#0070c9",
+              "background": "#246BCE",
               "shy": "true",
-              "color": "#ffffff"
+              "color": "#296BCE"
             },
-            "title": "iOS Dev Weekly"
+            "title": "Newslang Direct"
           },
           "sections": [
             {
@@ -36,7 +36,7 @@
                 "{{#each $jason.find('.item')}}": {
                   "type": "vertical",
                   "href": {
-                    "url": "https://raw.githubusercontent.com/gliechtenstein/iosdevweekly.json/master/detail.json",
+                    "url": "https://raw.githubusercontent.com/taoofx/iosdevweekly.json/master/detail.json",
                     "options": {
                       "issue": "http://iosdevweekly.com{{$(this).find('a').attr('href')}}"
                     }
