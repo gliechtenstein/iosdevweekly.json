@@ -1,18 +1,18 @@
 {
   "$jason": {
     "head": {
-      "title": "Newslang003",
+      "title": "Newslang4",
       "actions": {
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://newsapi.org/v2/everything?q=climate%20AND%20(denver%20OR%20orlando%20OR%20Austin%20OR%20%22San%20Antonio%22%20OR%20Seattle)&from=2020-09-01&to=2020-09-30&sortBy=relevance&apiKey=9211ca16a6414c7eb224517aced91b46",
-//            "data_type": "html"
+            "url": "https://newsapi.org/v2/everything?q=climate%20AND%20(denver%20OR%20orlando%20OR%20Austin%20OR%20%22San%20Antonio%22%20OR%20Seattle)&from=2020-10-01&to=2020-10-30&sortBy=relevance&apiKey=9211ca16a6414c7eb224517aced91b46",
+            "data_type": "html"
           },
           "success": {
             "type": "$render",
             "options": {
-         //     "type": "html"
+              "type": "html"
             }
           }
         }
@@ -24,11 +24,11 @@
           },
           "header": {
             "style": {
-              "background": "#b63c87",
+              "background": "#246BCE",
               "shy": "true",
-              "color": "#296BCE"
+              "color": "#a8a9ad"
             },
-            "title": "Newslang003"
+            "title": "Newslang4"
           },
           "sections": [
             {
